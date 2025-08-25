@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-background text-white antialiased;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply bg-card/80 backdrop-blur border border-red-600 rounded-2xl shadow-red-glow;
+  }
+}
